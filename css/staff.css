@@ -38,6 +38,10 @@
         grid-row-end: 3;
     
     }
+    .staff1 img {
+        justify-self: right;
+        width: 20%;
+    }
     .staff2 {
         grid-column-start: 1;
         grid-column-end: end;
