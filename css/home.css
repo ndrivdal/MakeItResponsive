@@ -1,0 +1,46 @@
+.aboutHeading {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    padding-left:20px;
+    font-weight: 700;
+    color: white;
+}
+
+.containerAbout {
+    background-color: yellow;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.scheduleHeading {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.containerSchedule {
+    background-color: pink;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    text-align: center;
+}
+
+.aboutImage{
+    background-color: grey;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 4;
+
+}
