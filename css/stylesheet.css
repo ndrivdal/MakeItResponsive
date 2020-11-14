@@ -130,50 +130,5 @@ div.contentBox {
     grid-column-start: 2;
     grid-column-end: 3;
     align-self: center;
-    min-width: 160px;
-}
-
-.containerFooter .social {
-    grid-column-start: 3;
-    grid-column-end: end;
-    align-self: center;
-    width: 100%;
-}
-
-.facebook{
-    content: url("../images/facebook.png");
-    width: 25px;
-    transform: translate(0, 25px);
-}
-
-.instagram {
-    content: url("../images/instagram.png");
-    width: 25px;
-    transform: translate(50px);
-}
-
-.reddit {
-    content: url("../images/reddit.png");
-    width: 25px;
-    transform: translate(100px, -25px);
-}
-
-@media screen and (max-width: 640px) {
-    .facebook{
-        content: url("../images/facebook.png");
-        width: 25px;
-        transform: translate(10px);
-    }
-
-    .instagram {
-        content: url("../images/instagram.png");
-        width: 25px;
-        transform: translate(10px);
-    }
-
-    .reddit {
-        content: url("../images/reddit.png");
-        width: 25px;
-        transform: translate(10px);
-    }
+    min-width: 210px;
 }
