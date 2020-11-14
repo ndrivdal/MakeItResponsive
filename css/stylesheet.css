@@ -76,3 +76,21 @@ div.contentBox {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     background-color: white;
 }
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    text-align: center;
+    justify-self: start;
+    align-self: end;
+
+
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: transparent;
+    margin-left: 25px;
+}
