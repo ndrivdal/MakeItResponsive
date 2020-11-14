@@ -64,6 +64,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    background-color: #dbdbdb;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -96,4 +98,11 @@ div.contentBox {
     font-size: 2em;
     font-weight: 700;
     margin: 0;
+}
+
+/* --- FOOTER --- */
+.containerFooter .logo {
+    font-family: Impact, sans-serif;
+    font-size: 24px;
+    align-self: start;
 }
