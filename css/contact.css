@@ -220,3 +220,11 @@ div.contentBox {
   align-self: center;
   min-width: 210px;
 }
+.containerFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #dbdbdb;
+  text-align: center;
+  min-height: 12.5vh;
+}
