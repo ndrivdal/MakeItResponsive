@@ -15,6 +15,16 @@
     padding-right: 20px;
 }
 
+@media screen and (max-width: 640px){
+    .containerAbout {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+}
+
 .aboutImage {
     float: right;
     margin-top: 15px;
@@ -38,6 +48,14 @@
     color: white;
 }
 
+@media screen and (max-width: 640px) {
+    .scheduleHeading {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+    }
+}
+
 .containerSchedule {
     grid-column-start: 5;
     grid-column-end: 5;
@@ -46,3 +64,12 @@
     text-align: center;
 }
 
+@media screen and (max-width: 640px) {
+    .containerSchedule {
+        margin-top: 40px;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+}
