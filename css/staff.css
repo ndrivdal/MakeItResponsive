@@ -5,10 +5,15 @@
     grid-row-end: 2;
 
     text-align: center;
+    justify-self: start;
+    align-self: end;
     
     
-    color: black;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
     background-color: transparent;
+    margin: 15px;
 }
 .staff1 {
     grid-column-start: 2;
