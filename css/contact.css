@@ -203,96 +203,20 @@ div.contentBox {
 
 }
 /*Content ends here.*/
-.containerFooter {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  background-color: #dbdbdb;
-  text-align: center;
-  min-height: 12.5vh;
-}
-
-@media screen and (max-width: 600px) {
-  .containerFooter{
-   width:auto;
-  }
-
-}
-
 /* --- FOOTER --- */
 .containerFooter .logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-family: Impact, sans-serif;
-    font-size: 35px;
-    align-self: center;
-    justify-self: start;
-    margin-left: 60px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: Impact, sans-serif;
+  font-size: 35px;
+  align-self: center;
+  justify-self: start;
+  margin-left: 5vw;
 }
 
 .containerFooter .info {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    align-self: center;
-}
-
-.containerFooter .social {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    align-self: center;
-    float: left;
-    width: 100%;
-}
-
-/* --- FOOTER --- */
-
-.containerFooter .logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-family: Impact, sans-serif;
-    font-size: 35px;
-    align-self: center;
-    justify-self: start;
-    margin-left: 60px;
-}
-
-.containerFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    background-color: #dbdbdb;
-    text-align: center;
-    min-height: 12.5vh;
-}
-
-.containerFooter .info {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    align-self: center;
-}
-
-.containerFooter .social {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    align-self: center;
-    float: left;
-    width: 100%;
-}
-
-.facebook{
-    content: url("../images/facebook.png");
-    width: 25px;
-    transform: translate(0, 25px);
-}
-
-.instagram {
-    content: url("../images/instagram.png");
-    width: 25px;
-    transform: translate(50px);
-}
-
-.reddit {
-    content: url("../images/reddit.png");
-    width: 25px;
-    transform: translate(100px, -25px);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  min-width: 210px;
 }
