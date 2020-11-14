@@ -1,9 +1,38 @@
-.body {
+body {
     font-family: 'Karla', sans-serif;
     margin: 0;
 }
 
 /* --- NAVBAR --- */
+.navbar {
+    overflow: hidden;
+    background-color: blue; /* velge en farge */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Highlight current website */
+.navbar a.active {
+    background-color: indianred; /* velge en farge */
+}
+
+/* Add a color on hovered navbar link */
+.navbar a:hover{
+    background-color: darkslategrey; /* velge en farge */
+}
+
+.navbar a.noHover:hover {
+    background-color: transparent;
+}
+
 
 
 /* --- CONTAINER --- */
