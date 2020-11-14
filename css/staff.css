@@ -21,7 +21,7 @@
     grid-row-start: 2;
     grid-row-end: 4;
 
-    background-color: yellow;
+    padding: 10px;
 }
 .staff2 {
     grid-column-start: 4;
@@ -29,7 +29,7 @@
     grid-row-start: 2;
     grid-row-end: 4;
 
-    background-color: red; 
+    padding: 10px;
 }
 .staff3 {
     grid-column-start: 2;
@@ -37,7 +37,7 @@
     grid-row-start: 4;
     grid-row-end: 6;
 
-    background-color: yellow;
+    padding: 10px;
 }
 .staff4 {
     grid-column-start: 4;
@@ -45,5 +45,5 @@
     grid-row-start: 4;
     grid-row-end: 6;
 
-    background-color: yellow; 
+    padding: 10px;
 }
