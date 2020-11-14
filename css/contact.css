@@ -1,0 +1,259 @@
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Impact;
+    src: url("../font/impact.ttf");
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    overflow: hidden;
+    background-color: #308FCB;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Highlight current website */
+.navbar a.active {
+    background-color: #6BADD8;
+}
+
+/* Add a color on hovered navbar link */
+.navbar a:hover{
+    background-color: #80B9DD;
+}
+
+.navbar a.noHover {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    align-self: center;
+    font-family: Impact, sans-serif;
+    font-size: 24px;
+}
+
+.navbar a.noHover:hover {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar a.noHover {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        align-self: center;
+        font-family: Impact, sans-serif;
+        font-size: 15px;
+    }
+
+    .navbar a {
+        font-size: 0.8em;
+        text-align: center;
+        padding: 11px 9px;
+    }
+}
+
+/* --- CONTAINER --- */
+
+div.contentBox {
+    margin: 15px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    background-color: white;
+}
+
+/*Content starts here*/
+.container{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+  
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  .brand{
+    text-align: center;
+    
+  }
+  
+  .brand span{
+    color:#fff;
+  }
+  
+  .wrapper{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  }
+  
+  .wrapper > *{
+    padding: 1em;
+  }
+  
+  .company-info{
+    background:#c9e6ff;
+  }
+  
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin:0 0 1rem 0;
+  }
+  
+  .contact{
+    background:#f9feff;
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+  }
+
+  .contact form input{
+      width:80%;
+      padding:1em;
+      border:1px solid #c9e6ff;
+  }
+
+  .contact form textarea{
+      max-width:80%;
+      padding:1em;
+      border:1px solid #c9e6ff;
+  }
+  
+  .contact form button{
+    background:#c9e6ff;
+    border:0;
+    text-transform: uppercase;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > *{
+      padding:2em;
+    }
+  
+    .company-info h3, .company-info ul, .brand{
+      text-align: left;
+    }
+  }
+/*Content ends here.*/
+
+/* --- FOOTER --- */
+.containerFooter .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: Impact, sans-serif;
+    font-size: 35px;
+    align-self: center;
+    justify-self: start;
+    margin-left: 60px;
+}
+
+.containerFooter .info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+.containerFooter .social {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    float: left;
+    width: 100%;
+}
+
+/* --- FOOTER --- */
+.containerFooter .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: Impact, sans-serif;
+    font-size: 35px;
+    align-self: center;
+    justify-self: start;
+    margin-left: 60px;
+}
+
+.containerFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #dbdbdb;
+    text-align: center;
+    min-height: 12.5vh;
+}
+
+.containerFooter .info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+.containerFooter .social {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    float: left;
+    width: 100%;
+}
+
+.facebook{
+    content: url("../images/facebook.png");
+    width: 25px;
+    transform: translate(0, 25px);
+}
+
+.instagram {
+    content: url("../images/instagram.png");
+    width: 25px;
+    transform: translate(50px);
+}
+
+.reddit {
+    content: url("../images/reddit.png");
+    width: 25px;
+    transform: translate(100px, -25px);
+}

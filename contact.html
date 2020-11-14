@@ -2,22 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
     <title>contact us ;))</title>
 </head>
+<div class="navbar">
+    <a class="navLogo noHover">INOVA</a>
+    <a class="active">Home</a>
+    <a href="html/schedule.html">Schedule</a>
+    <a href="html/staff.html">Staff</a>
+    <a href="html/contact.html">Contact</a>
+</div>
 <body>
-    <div class="content">
-        <!--contact section start-->
-        <div class="contact-section">
-            <div class="contact-form">
-                <form class="contact" action="" method="post">
-                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <input type="submit" name="submit" class="send-btn" value="Send">
-                </form>
-            </div>
+    <div class="containerFullScreen"></div>
+    <div class="container">
+        <h1 class="brand"> Contact Us</h1>
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa fa-road"></i> 0164 Oslo</li>
+              <li><i class="fa fa-phone"></i> (+47) 22 22 55 55</li>
+              <li><i class="fa fa-envelope"></i> Inova.support@outlook.com</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>Email Us</h3>
+            <form>
+              <p>
+                <label>Name</label>
+                <input type="text" name="name">
+              </p>
+              <p>
+                <label>Subject</label>
+                <input type="text" name="company">
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email">
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone">
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5"></textarea>
+              </p>
+              <p class="full">
+                <button>Submit</button>
+              </p>
+            </form>
+          </div>
         </div>
-        <!--contact section end-->
+      </div>
+    <div class="containerFooter">
+        <div class="logo">INOVA</div>
+        <div class="info">
+            E-mail: contact@inova.com<br/>
+            Phone: +47 123 45 678</div>
+        <div class="social">
+            <div class="facebook"></div>
+            <div class="instagram"></div>
+            <div class="reddit"></div>
+        </div>
+    </div>
+
+
 </body>
 </html>
+
