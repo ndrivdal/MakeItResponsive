@@ -90,6 +90,7 @@ div.contentBox {
     grid-row-end: 2;
     
     width:auto;
+    height:auto;
     padding:30px;
   }
   
@@ -195,6 +196,24 @@ div.contentBox {
       text-align: left;
     }
   }
+
+  @media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+
+    .contact-form h2{
+        font-size: 30px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
 /*Content ends here.*/
 
 /* --- FOOTER --- */
