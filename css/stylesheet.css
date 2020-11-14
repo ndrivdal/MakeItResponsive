@@ -29,6 +29,10 @@ body {
     background-color: darkslategrey; /* velge en farge */
 }
 
+.navbar a.noHover:hover {
+    background-color: transparent;
+}
+
 
 
 /* --- CONTAINER --- */
