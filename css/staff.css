@@ -30,6 +30,12 @@
 
     padding: 10px;
 }
+.staffimg {
+    width: 30%;
+    float: right;
+    padding: 10px;
+    border-radius: 15px;
+}
 @media screen and (max-width: 600px) {
     .staff1 {
         grid-column-start: 1;
@@ -38,6 +44,7 @@
         grid-row-end: 3;
     
     }
+    
     .staff2 {
         grid-column-start: 1;
         grid-column-end: end;
