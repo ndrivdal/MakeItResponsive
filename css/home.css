@@ -48,14 +48,6 @@
     color: white;
 }
 
-@media screen and (max-width: 640px) {
-    .scheduleHeading {
-        grid-row-start: 4;
-        grid-row-end: 4;
-        grid-column-start: 2;
-    }
-}
-
 .containerSchedule {
     grid-column-start: 5;
     grid-column-end: 5;
@@ -64,16 +56,30 @@
     text-align: center;
 }
 
+.containerSchedule div{
+    width: 100%;
+}
+
 @media screen and (max-width: 640px) {
-    .containerSchedule {
-        margin-top: 40px;
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scheduleHeading {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        text-align: center;
+        width: 100%;
+    }
+
+    div.containerSchedule {
+        margin-top: 70px;
         grid-row-start: 4;
         grid-row-end: 6;
         grid-column-start: 2;
         grid-column-end: 6;
     }
-}
-
-.containerSchedule div{
-    width: 100%;
 }
