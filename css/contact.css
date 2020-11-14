@@ -104,7 +104,7 @@ div.contentBox {
 
   
   .wrapper{
-    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
   }
   
   .wrapper > *{
@@ -113,6 +113,7 @@ div.contentBox {
   
   .company-info{
     background:#55A1D2;
+      border-radius: 15px 15px 0 0;
   }
   
   .company-info h3, .company-info ul{
@@ -123,6 +124,7 @@ div.contentBox {
   
   .contact{
     background:#fff;
+      border-radius: 0 0 15px 15px;
   }
   
   /* FORM STYLES */
@@ -155,14 +157,14 @@ div.contentBox {
   .contact form input{
       width:80%;
       padding:1em;
-      border:3px solid #000;
+      border:2px solid #000;
       border-radius: 6px;
   }
 
   .contact form textarea{
       max-width:80%;
       padding:1em;
-      border:3px solid #000;
+      border:2px solid #000;
       border-radius: 5px;
   }
   
@@ -190,7 +192,14 @@ div.contentBox {
     .wrapper > *{
       padding:2em;
     }
-  
+    .contact {
+        border-radius: 0 15px 15px 0;
+    }
+
+      .company-info {
+          border-radius: 15px 0 0 15px;
+      }
+
     .company-info h3, .company-info ul, .brand{
       text-align: left;
     }
@@ -206,7 +215,6 @@ div.contentBox {
         width:auto;
         height:auto;
     }
-
 }
 /*Content ends here.*/
 /* --- FOOTER --- */
