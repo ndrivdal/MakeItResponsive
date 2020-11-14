@@ -1,21 +1,145 @@
-.body {
+body {
     font-family: 'Karla', sans-serif;
+    margin: 0;
 }
+
+@font-face {
+    font-family: Impact;
+    src: url("../font/impact.ttf");
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    overflow: hidden;
+    background-color: #308FCB;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Highlight current website */
+.navbar a.active {
+    background-color: #6BADD8;
+}
+
+/* Add a color on hovered navbar link */
+.navbar a:hover{
+    background-color: #80B9DD;
+}
+
+.navbar a.noHover {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    align-self: center;
+    font-family: Impact, sans-serif;
+    font-size: 24px;
+}
+
+.navbar a.noHover:hover {
+    background-color: transparent;
+}
+
+
 
 /* --- CONTAINER --- */
 .containerFullScreen {
     display: grid;
     grid-template-columns: 2% repeat(4, 1fr) 2%;
-    grid-template-rows: minmax(2%, 10%) repeat(4, 1fr) 2%;
+    grid-template-rows: 70px repeat(4, minmax(100px, 1fr)) 2%;
     min-height: 100vh;
+
+    background-image: url("../images/backgroundimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .containerFooter {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #dbdbdb;
+    text-align: center;
+    min-height: 12.5vh;
 }
 
 @media screen and (max-width: 600px) {
 
+}
+
+div.contentBox {
+    margin: 15px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    background-color: white;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    text-align: center;
+    justify-self: start;
+    align-self: end;
+
+    background-color: transparent;
+    margin-left: 25px;
+}
+
+.title h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* --- FOOTER --- */
+.containerFooter .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: Impact, sans-serif;
+    font-size: 35px;
+    align-self: center;
+    justify-self: start;
+    margin-left: 60px;
+}
+
+.containerFooter .info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+.containerFooter .social {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    float: left;
+    width: 100%;
+}
+
+.facebook{
+    content: url("../images/facebook.png");
+    width: 25px;
+    transform: translate(0, 25px);
+}
+
+.instagram {
+    content: url("../images/instagram.png");
+    width: 25px;
+    transform: translate(50px);
+}
+
+.reddit {
+    content: url("../images/reddit.png");
+    width: 25px;
+    transform: translate(100px, -25px);
 }

@@ -1,0 +1,92 @@
+.aboutHeading {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    padding-left:20px;
+    font-weight: 700;
+    color: white;
+}
+
+.containerAbout {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 640px){
+    .containerAbout {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+}
+
+.aboutImage {
+    float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.aboutImage img {
+    height: 50vh;
+    width: auto;
+    max-height: 400px;
+    min-height: 100px;
+}
+
+.scheduleHeading {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+
+
+.containerSchedule {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    text-align: center;
+}
+
+.containerSchedule div{
+    width: 100%;
+    margin-top: 20px;
+    background-color: red;
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .scheduleHeading {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        text-align: center;
+        width: 100%;
+    }
+
+    div.containerSchedule {
+        margin-top: 70px;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+}
