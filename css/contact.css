@@ -91,6 +91,7 @@ div.contentBox {
     width:auto;
     height:auto;
     padding:30px;
+    border-radius:30px;
   }
   
   ul{
@@ -120,7 +121,7 @@ div.contentBox {
   }
   
   .contact{
-    background:#0072BB;
+    background:#fff;
   }
   
   /* FORM STYLES */
@@ -128,6 +129,7 @@ div.contentBox {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:20px;
+    border-radius: 10px;
   }
   
   .contact form label{
@@ -152,19 +154,22 @@ div.contentBox {
   .contact form input{
       width:80%;
       padding:1em;
-      border:1px solid #c9e6ff;
+      border:3px solid #000;
+      border-radius: 6px;
   }
 
   .contact form textarea{
       max-width:80%;
       padding:1em;
-      border:1px solid #c9e6ff;
+      border:3px solid #000;
+      border-radius: 5px;
   }
   
   .contact form button{
     background:#80B9DD;
     border:0;
     text-transform: uppercase;
+    border-radius: 5px;
   }
   
   .contact form button:hover,.contact form button:focus{
