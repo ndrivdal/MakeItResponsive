@@ -46,7 +46,21 @@ body {
     background-color: transparent;
 }
 
+@media screen and (max-width: 640px) {
+    .navbar a.noHover {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        align-self: center;
+        font-family: Impact, sans-serif;
+        font-size: 15px;
+    }
 
+    .navbar a {
+        font-size: 0.8em;
+        text-align: center;
+        padding: 11px 9px;
+    }
+}
 
 /* --- CONTAINER --- */
 .containerFullScreen {
@@ -109,20 +123,20 @@ div.contentBox {
     font-size: 35px;
     align-self: center;
     justify-self: start;
-    margin-left: 60px;
+    margin-left: 5vw;
 }
 
 .containerFooter .info {
     grid-column-start: 2;
     grid-column-end: 3;
     align-self: center;
+    min-width: 160px;
 }
 
 .containerFooter .social {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: end;
     align-self: center;
-    float: left;
     width: 100%;
 }
 
@@ -142,4 +156,24 @@ div.contentBox {
     content: url("../images/reddit.png");
     width: 25px;
     transform: translate(100px, -25px);
+}
+
+@media screen and (max-width: 640px) {
+    .facebook{
+        content: url("../images/facebook.png");
+        width: 25px;
+        transform: translate(10px);
+    }
+
+    .instagram {
+        content: url("../images/instagram.png");
+        width: 25px;
+        transform: translate(10px);
+    }
+
+    .reddit {
+        content: url("../images/reddit.png");
+        width: 25px;
+        transform: translate(10px);
+    }
 }
