@@ -39,7 +39,7 @@ body {
 .containerFullScreen {
     display: grid;
     grid-template-columns: 2% repeat(4, 1fr) 2%;
-    grid-template-rows: minmax(2%, 10%) repeat(4, 1fr) 2%;
+    grid-template-rows: 70px repeat(4, minmax(100px, 1fr)) 2%;
     min-height: 100vh;
 
     background-image: url("../images/backgroundimage.png");
@@ -58,7 +58,7 @@ body {
 }
 
 div.contentBox {
-    margin: 5px;
+    margin: 15px;
     border-radius: 15px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     background-color: white;
