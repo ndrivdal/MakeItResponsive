@@ -7,7 +7,6 @@
 }
 
 .containerAbout {
-    background-color: yellow;
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 2;
@@ -16,8 +15,15 @@
     padding-right: 20px;
 }
 
+.aboutImage{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 4;
+
+}
+
 .scheduleHeading {
-    background-color: red;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 5;
@@ -28,7 +34,6 @@
 }
 
 .containerSchedule {
-    background-color: pink;
     grid-column-start: 5;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -36,11 +41,3 @@
     text-align: center;
 }
 
-.aboutImage{
-    background-color: grey;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 4;
-    grid-column-end: 4;
-
-}
