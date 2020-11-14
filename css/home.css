@@ -16,9 +16,16 @@
 }
 
 .aboutImage {
-    position: relative;
-    top: 0;
     float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.aboutImage img {
+    height: 50vh;
+    width: auto;
+    max-height: 400px;
+    min-height: 100px;
 }
 
 .scheduleHeading {
