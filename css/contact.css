@@ -8,6 +8,17 @@ body {
     src: url("../font/impact.ttf");
 }
 
+.containerFullScreen {
+    display: grid;
+    grid-template-columns: 2% repeat(4, 1fr) 2%;
+    grid-template-rows: 70px repeat(4, minmax(100px, 1fr)) 2%;
+    min-height: 100vh;
+
+    background-image: url("../images/backgroundimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* --- NAVBAR --- */
 .navbar {
     overflow: hidden;
@@ -73,10 +84,13 @@ div.contentBox {
 
 /*Content starts here*/
 .container{
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:1em;
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    width:auto;
+    padding:30px;
   }
   
   ul{
@@ -84,15 +98,15 @@ div.contentBox {
     padding:0;
   }
   
-  .brand{
+  .contact-me{
     margin:auto;
-    align-items: center;
+    text-align: center;
+    font-family:  sans-serif;
+    color:#fff
     
   }
   
-  .brand span{
-    color:#fff;
-  }
+
   
   .wrapper{
     box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
@@ -103,7 +117,7 @@ div.contentBox {
   }
   
   .company-info{
-    background:#c9e6ff;
+    background:#55A1D2;
   }
   
   .company-info h3, .company-info ul{
@@ -112,7 +126,7 @@ div.contentBox {
   }
   
   .contact{
-    background:#f9feff;
+    background:#0072BB;
   }
   
   /* FORM STYLES */
@@ -127,6 +141,7 @@ div.contentBox {
   }
   
   .contact form p{
+    font-weight: 700;
     margin:0;
   }
   
@@ -153,7 +168,7 @@ div.contentBox {
   }
   
   .contact form button{
-    background:#c9e6ff;
+    background:#80B9DD;
     border:0;
     text-transform: uppercase;
   }
