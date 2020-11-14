@@ -87,10 +87,13 @@ div.contentBox {
     justify-self: start;
     align-self: end;
 
+    background-color: transparent;
+    margin-left: 25px;
+}
 
+.title h1 {
     color: white;
     font-size: 2em;
     font-weight: 700;
-    background-color: transparent;
-    margin-left: 25px;
+    margin: 0;
 }
