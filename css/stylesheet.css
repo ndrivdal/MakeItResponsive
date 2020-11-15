@@ -66,8 +66,8 @@ body {
 .containerFullScreen {
     display: grid;
     grid-template-columns: 2% repeat(4, 1fr) 2%;
-    grid-template-rows: 70px repeat(4, minmax(100px, 1fr)) 2%;
-    min-height: 100vh;
+    grid-template-rows: 70px repeat(4, minmax(100px, auto)) 2%;
+    min-height: 85vh;
 
     background-image: url("../images/backgroundimage.png");
     background-size: cover;
