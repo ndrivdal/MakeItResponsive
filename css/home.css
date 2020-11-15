@@ -57,27 +57,78 @@
     grid-column-start: 5;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 6;
+    grid-row-end: 4;
     text-align: center;
+    min-height: 100%;
 }
 
 .containerSchedule div{
-    width: 100%;
-    margin-top: 20px;
-    background-color: red;
-    border-bottom: 1px solid black;
+    max-width: 100%;
+}
+
+/* --- SCHEDULE ITEMS --- */
+
+.scheduleItem {
+    max-width: 100%;
+    min-height: 75px;
+    background-color: transparent;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+}
+
+.scheduleItem.bottom {
+    border-bottom: 0;
+}
+
+.scheduleItemTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.scheduleItem h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.scheduleItemDate p {
+    margin: 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.TED {
+    background-color: rgba(255, 80, 65, 0.65);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.camp {
+    background-color: rgba(245, 228, 124, 0.75);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
 }
 
 @media screen and (max-width: 640px) {
+    .containerFullScreen {
+        grid-template-rows: 70px repeat(3, minmax(100px, min-content)) 2%;
+    }
+
     .title {
         width: 100%;
         text-align: center;
         margin: 0;
     }
 
+    .containerAbout {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
     .scheduleHeading {
-        grid-row-start: 4;
-        grid-row-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
         grid-column-start: 2;
         grid-column-end: 6;
         text-align: center;
@@ -86,8 +137,8 @@
 
     div.containerSchedule {
         margin-top: 70px;
-        grid-row-start: 4;
-        grid-row-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
         grid-column-start: 2;
         grid-column-end: 6;
     }
