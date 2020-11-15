@@ -1,96 +1,13 @@
-body {
-  font-family: 'Karla', sans-serif;
-  margin: 0;
-}
-
-@font-face {
-  font-family: Impact;
-  src: url("../font/impact.ttf");
-}
-
-.containerFullScreen {
-  display: grid;
-  grid-template-columns: 2% repeat(4, 1fr) 2%;
-  grid-template-rows: 70px repeat(4, minmax(100px, 1fr)) 2%;
-  min-height: 100vh;
-  background-image: url("../images/backgroundimage.png");
-  background-size: cover;
-}
-
-/* --- NAVBAR --- */
-.navbar {
-  overflow: hidden;
-  background-color: #308FCB;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Highlight current website */
-.navbar a.active {
-  background-color: #6BADD8;
-}
-
-/* Add a color on hovered navbar link */
-.navbar a:hover{
-  background-color: #80B9DD;
-}
-
-.navbar a.noHover {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  align-self: center;
-  font-family: Impact, sans-serif;
-  font-size: 24px;
-}
-
-.navbar a.noHover:hover {
-  background-color: transparent;
-}
-
-@media screen and (max-width: 640px) {
-  .navbar a.noHover {
-      padding-top: 9px;
-      padding-bottom: 9px;
-      align-self: center;
-      font-family: Impact, sans-serif;
-      font-size: 15px;
-  }
-
-  .navbar a {
-      font-size: 0.8em;
-      text-align: center;
-      padding: 11px 9px;
-  }
-}
-
-
-/* --- CONTAINER --- */
-
-div.contentBox {
-    margin: 15px;
-    border-radius: 15px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-    background-color: white;
-}
-
 /*Content starts here*/
 .container{
-    grid-column-start: 1;
-    grid-column-end: end;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
     
     width:auto;
     height:auto;
-    padding:30px;
+    margin: 15px;
     border-radius:30px;
   }
   
@@ -125,6 +42,10 @@ div.contentBox {
   .contact{
     background:#fff;
       border-radius: 0 0 15px 15px;
+  }
+
+  .contact h3 {
+      margin-top: 0;
   }
   
   /* FORM STYLES */
@@ -183,7 +104,7 @@ div.contentBox {
   }
   
   /* LARGE SCREENS */
-  @media(min-width:700px){
+  @media(min-width:860px){
     .wrapper{
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -207,10 +128,10 @@ div.contentBox {
 
   @media screen and (max-width: 640px){
     .container {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 5;
         
         width:auto;
         height:auto;
