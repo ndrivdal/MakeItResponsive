@@ -1,0 +1,79 @@
+.schedule {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    min-height: min-content;
+    padding-bottom: 22px;
+}
+
+.scheduleItem {
+    max-width: 100%;
+    min-height: 75px;
+    background-color: transparent;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+}
+
+.scheduleItem.bottom {
+    border-bottom: 0;
+}
+
+.scheduleItem h2 {
+    margin: 0;
+}
+
+.scheduleItemDate p {
+    margin: 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.TED {
+    background-color: rgba(255, 80, 65, 0.65);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.camp {
+    background-color: rgba(245, 228, 124, 0.75);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+/* --- SMALLER SCREENS --- */
+@media screen and (max-width: 570px) {
+    .scheduleItem h2 {
+        margin: 0;
+        font-size: 1.2em;
+        overflow: hidden;
+    }
+
+    .scheduleItemDate p {
+        margin: 0;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    .TED {
+        font-size: 0.9em;
+    }
+    .camp {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .scheduleItem h2 {
+        margin: 0;
+        font-size: 1em;
+        overflow: hidden;
+    }
+
+    .scheduleItemDate p, .scheduleItemDescription p, .TED, .camp {
+        font-size: 0.8em;
+    }
+}

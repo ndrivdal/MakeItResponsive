@@ -46,7 +46,21 @@ body {
     background-color: transparent;
 }
 
+@media screen and (max-width: 640px) {
+    .navbar a.noHover {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        align-self: center;
+        font-family: Impact, sans-serif;
+        font-size: 15px;
+    }
 
+    .navbar a {
+        font-size: 0.8em;
+        text-align: center;
+        padding: 11px 9px;
+    }
+}
 
 /* --- CONTAINER --- */
 .containerFullScreen {
@@ -62,8 +76,11 @@ body {
 
 .containerFooter {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #dbdbdb;
+    text-align: center;
+    min-height: 12.5vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -96,4 +113,22 @@ div.contentBox {
     font-size: 2em;
     font-weight: 700;
     margin: 0;
+}
+
+/* --- FOOTER --- */
+.containerFooter .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: Impact, sans-serif;
+    font-size: 35px;
+    align-self: center;
+    justify-self: start;
+    margin-left: 5vw;
+}
+
+.containerFooter .info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    min-width: 210px;
 }
