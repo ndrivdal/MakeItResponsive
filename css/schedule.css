@@ -6,6 +6,7 @@
 
     min-height: min-content;
     padding-bottom: 22px;
+    overflow: hidden;
 }
 
 .scheduleItem {
@@ -28,4 +29,61 @@
     margin: 0;
     font-size: 1.2em;
     font-style: italic;
+}
+
+.TED {
+    background-color: rgba(217, 58, 58, 0.5);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.camp {
+    background-color: rgb(245, 228, 124);
+    max-width: max-content;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+/* --- SMALLER SCREENS --- */
+@media screen and (max-width: 570px) {
+    .scheduleItem h2 {
+        margin: 0;
+        font-size: 1.2em;
+        overflow: hidden;
+    }
+
+    .scheduleItemDate p {
+        margin: 0;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    .TED {
+        font-size: 0.9em;
+    }
+    .camp {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .scheduleItem h2 {
+        margin: 0;
+        font-size: 1em;
+        overflow: hidden;
+    }
+
+    .scheduleItemDate p {
+        margin: 0;
+        font-size: 0.8em;
+        font-style: italic;
+    }
+
+    .TED {
+        font-size: 0.8em;
+    }
+    .camp {
+        font-size: 0.8em;
+    }
 }
